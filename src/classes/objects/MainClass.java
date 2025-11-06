@@ -19,6 +19,8 @@ public class MainClass {
 		System.out.println("Emp Id is :" + obj.empId);
 
 		System.out.println("Emp Visa Status is :" + obj.visaStatus);
+		
+		System.out.println(age);
 
 	}
 
