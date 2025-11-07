@@ -1,6 +1,6 @@
 package classes.objects;
 
-public class MainClass {
+public class ParentClass {
 
 	String name = "Bharath Reddy";
 
@@ -12,7 +12,7 @@ public class MainClass {
 
 	public static void main(String[] args) {
 
-		MainClass obj = new MainClass();// Creating Object
+		ParentClass obj = new ParentClass();// Creating Object
 
 		System.out.println("Emp Name is :" + obj.name);
 

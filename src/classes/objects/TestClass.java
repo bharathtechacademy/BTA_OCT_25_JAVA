@@ -4,7 +4,7 @@ public class TestClass {
 
 	public static void main(String[] args) {
 		
-		MainClass obj = new MainClass();//Creating Object
+		ParentClass obj = new ParentClass();//Creating Object
 		
 		System.out.println("Emp Name is :"+obj.name);
 		
@@ -12,7 +12,7 @@ public class TestClass {
 
 		System.out.println("Emp Visa Status is :"+obj.visaStatus);
 	
-		System.out.println("Emp Age is "+MainClass.age);
+		System.out.println("Emp Age is "+ParentClass.age);
 	}
 
 }

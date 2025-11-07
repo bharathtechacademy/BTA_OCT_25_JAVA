@@ -1,13 +1,13 @@
 package classes.objects;
 
-public class ChildClass extends  MainClass{ //child extends parent
+public class ChildClass extends  ParentClass{ //child extends parent
 	
 	//Inheritance is an OOP concept.
 	//Extending parent class properties into child class without creating any object.
 
 	public static void main(String[] args) {
 
-		ChildClass obj = new ChildClass();		
+		ParentClass obj = new ChildClass();		
 
 		System.out.println("Emp Name is :"+obj.name);
 		

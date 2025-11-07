@@ -1,5 +1,11 @@
 package collections;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Set;
+
 public class CollectionsInJava {
 
 	public static void main(String[] args) {
@@ -10,6 +16,8 @@ public class CollectionsInJava {
 		empNames[0] = "Bharath";
 		empNames[1] = "ABC";
 		empNames[2] = "Bharath";
+		
+		System.out.println(empNames.length);
 		
 		/****Challenges with Array****/
 		//1. Arrays are fixed in size.
@@ -52,6 +60,101 @@ public class CollectionsInJava {
 		// Order of storing values : Insertion order, Sorted/Ascending Order , Random order
 		// Allowing the Null values : Allowed / Not-Allowed
 		// Memory Allocation Technique : Contiguous Memory Allocation/Non-Contiguous Memory Allocation
+		
+		/*************Wrapper Classes************/
+		//Wrapper classes are used to convert primitive data types into class data types.
+		
+		//byte --> Byte
+		//short --> Short
+		//int --> Integer
+		//long --> Long
+		//float --> Float
+		//double --> Double
+		//boolean --> Boolean
+		//char --> Character
+		
+		/************  ArrayList *****************/
+		
+		System.out.println("************  ArrayList *****************");
+		// Syntax to Initialize: List<DataType> variable = new ArrayList<DataType>();
+		// Syntax to add data: variable.add(value);
+		// Syntax to get the value: variable.get(index);
+		// Syntax to remove the value: variable.remove(index/value);
+		// Syntax to get the size: variable.size();
+		
+		//ArrayList follows insertion order.
+		//ArrayList allows Null values.
+		//ArrayList follows contiguous memory allocation.
+		
+		//Store employee names using ArrayList.
+		List<String> empNamesArrayList = new ArrayList<String>();
+		empNamesArrayList.add("Bharath");
+		empNamesArrayList.add("Anusha");
+		empNamesArrayList.add("Soumya");
+		empNamesArrayList.add("Anusha"); // Duplicate value
+		empNamesArrayList.add("Binoy");
+		empNamesArrayList.add("Bhagwat");
+		empNamesArrayList.add(0,"Dhinesh");
+		empNamesArrayList.add(null); // Null value
+		empNamesArrayList.remove(3);
+		System.out.println("Number of employees: " + empNamesArrayList.size());
+		System.out.println("Employee at index 3: " + empNamesArrayList.get(3));
+		System.out.println("Employee Names: " + empNamesArrayList);
+		
+		/************  LinkedList *****************/
+		
+		System.out.println("************  LinkedList *****************");
+		// Syntax to Initialize: List<DataType> variable = new LinkedList<DataType>();
+		// Syntax to add data: variable.add(value);
+		// Syntax to get the value: variable.get(index);
+		// Syntax to remove the value: variable.remove(index/value);
+		// Syntax to get the size: variable.size();
+		
+		//LinkedList follows insertion order.
+		//LinkedList allows Null values.
+		//LinkedList follows Non-contiguous memory allocation.
+		
+		//Store employee names using LinkedList.
+		List<String> empNamesLinkedList = new LinkedList<String>();
+		empNamesLinkedList.add("Bharath");
+		empNamesLinkedList.add("Anusha");
+		empNamesLinkedList.add("Soumya");
+		empNamesLinkedList.add("Anusha"); // Duplicate value
+		empNamesLinkedList.add("Binoy");
+		empNamesLinkedList.add("Bhagwat");
+		empNamesLinkedList.add(null); // Null value
+		empNamesLinkedList.remove("Bharath");
+		System.out.println("Number of employees: " + empNamesLinkedList.size());
+		System.out.println("Employee at index 3: " + empNamesLinkedList.get(3));
+		System.out.println("Employee Names: " + empNamesLinkedList);
+		
+		/************  HashSet *****************/
+		
+		System.out.println("************  HashSet *****************");
+		// Syntax to Initialize: List<DataType> variable = new HashSet<DataType>();
+		// Syntax to add data: variable.add(value);
+		// Syntax to get the value: variable.get(index);
+		// Syntax to remove the value: variable.remove(index/value);
+		// Syntax to get the size: variable.size();
+		
+		//HashSet follows Random order.
+		//HashSet allows Null values.
+		//HashSet follows Non-contiguous memory allocation.
+		
+		//Store employee names using HashSet.
+		Set<String> empNamesHashSet = new HashSet<String>();
+		empNamesHashSet.add("Bharath");
+		empNamesHashSet.add("Anusha");
+		empNamesHashSet.add("Soumya");
+		empNamesHashSet.add("Anusha"); // Duplicate value
+		empNamesHashSet.add("Binoy");
+		empNamesHashSet.add("Bhagwat");
+		empNamesHashSet.add(null); // Null value
+		empNamesHashSet.remove("Bharath");
+		System.out.println("Number of employees: " + empNamesHashSet.size());
+//		System.out.println("Employee at index 3: " + empNamesHashSet.get(3));
+		System.out.println("Employee Names: " + empNamesHashSet);
+		
 	}
 
 }
