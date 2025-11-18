@@ -50,8 +50,8 @@ public class Assignment10_HikePercentage {
      * @return hike percentage
      */
     public static double calculateHike(double baseSalary, double experience, double rating) {
-        double variablePayPercentage;
-        double bonus;
+        double variablePayPercentage=0;
+        double bonus=0;
         double reward = 0;
 
         // Determine variable pay and bonus based on rating
