@@ -6,7 +6,7 @@ public class Assignment12_StockMarket {
 
         // Array representing the stock prices over different days
         // Each element corresponds to the price of the stock on that day
-        int[] prices = { 7, 5, 4, 3, 2, 1 };
+        int[] prices = { 7,1,5,3,6,4 };
 
         // Variable to store the maximum profit observed so far
         int maxProfit = 0;

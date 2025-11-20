@@ -3,7 +3,7 @@ package non.access.modifiers;
 public  class AbsClass2 extends AbstractNonAccessModifier {
 
 	public static void main(String[] args) {
-		
+	//	AbstractNonAccessModifier obj = new AbstractNonAccessModifier();
 
 	}
 
