@@ -34,6 +34,9 @@ public class OOPSConcepts {
 		
 	// Polymorphism: Polymorphism means many forms. 
 	// Polymorphism is a concept of having the same method to complete different tasks.
+	// 2 types of polymorphism: compile time polymorphism (method overloading) and runtime polymorphism (method overriding).
+	
+	
 	public static void main(String[] args) {
 
 	}
